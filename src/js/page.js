@@ -11,7 +11,6 @@ const detailsButton = $("#details-button"),
 /* End elements part. */
 
 /* Details button part. */
-const detailsButton = $("#details-button");
 detailsButton.on("click", () =>{
     const expanded = JSON.parse(detailsButton.attr("aria-expanded"));
 
