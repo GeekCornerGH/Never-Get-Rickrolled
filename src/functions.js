@@ -6,7 +6,7 @@
 */
 
 "use strict";
-console.image = async(url, scale = 1, position = "center") =>{
+console.image = async(url, scale = 1) =>{
     return new Promise((resolve) =>{
         const image = new Image();
         image.onload = () =>{
