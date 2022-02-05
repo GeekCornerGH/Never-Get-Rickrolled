@@ -41,11 +41,11 @@
                 </div>
             </div>
             <div class="nav-wrapper">
-                <button id="return-to-safety">Revenir en lieu sûr</button>
+                <button id="return-to-safety"></button>
                 <button id="proceed-button" class="secondary-button small-link hidden"></button>
-                <button id="details-button" class="secondary-button small-link" aria-expanded="false">Masquer les paramètres avancés</button>
+                <button id="details-button" class="secondary-button small-link" aria-expanded="false"></button>
             </div>
-            <div id="details">
+            <div id="details" class="hidden">
                 <p id="final-paragraph">
                     <p id="rick"></p>
                     <a id="proceed-link" class="small-link"></a>
@@ -53,28 +53,6 @@
             </div>
         </div>
     </body>
-    <script id="translations" type="application/json">
-        {
-            "en-US": {
-                "detected-rickroll": "A rickroll has been detected",
-                "detected-rickroll-text": "People may be trying to make fun of you by using a rickroll on this site.",
-                "return-to-safety": "Return to safety",
-                "close-details": "Hide advanced settings",
-                "open-details": "Advanced settings",
-                "proceed-link": "Continue to the site {{ window.location_hash }}",
-                "rick": "In order to protect you from Rick Astley, we have blocked the page. If you still wish to access the site, click on the link below."
-            },
-            "fr-FR": {
-                "detected-rickroll": "Un rickroll a été détecté",
-                "detected-rickroll-text": "Des personnes tentent peut-être de se moquer de vous en utilisant un rickroll sur le site <strong>{{ window.location_hash }}</strong>.",
-                "return-to-safety": "Revenir en lieu sûr",
-                "close-details": "Masquer les paramètres avancés",
-                "open-details": "Paramètres avancés",
-                "proceed-link": "Continuer vers le site {{ window.location_hash }}",
-                "rick": "Afin de vous protéger de Rick Astley, nous avons bloqué la page. Si vous souhaitez toujours accèder au site, cliquez sur le lien ci-dessous."
-            }
-        }
-    </script>
     <script type="text/javascript" src="src/jquery.js"></script>
     <script type="text/javascript" src="src/page.js"></script>
 </html>
