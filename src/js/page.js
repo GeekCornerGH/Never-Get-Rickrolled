@@ -18,7 +18,7 @@ detailsButton.on("click", () =>{
     detailsButton.attr("aria-expanded", !expanded);
     details.toggleClass("hidden");
 
-    if(expanded) details.html(window.translations["open-details"]);
-    if(!expanded) details.html(window.translations["close-details"]);
+    if(expanded) detailsButton.html(window.translations["open-details"]);
+    if(!expanded) detailsButton.html(window.translations["close-details"]);
 });
 /* End details button part. */
