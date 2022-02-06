@@ -7,7 +7,9 @@
 "use strict";
 /* Initialize elements part. */
 const detailsButton = $("#details-button"),
-    details = $("#details");
+    details = $("#details"),
+    errorCode = $("#error-code"),
+    errorDebuggingInfo = $("#error-debugging-info");
 
 detailsButton.html(window.translations["open-details"]);
 /* End initialize elements part. */
@@ -16,10 +18,19 @@ detailsButton.html(window.translations["open-details"]);
 detailsButton.on("click", () =>{
     const expanded = JSON.parse(detailsButton.attr("aria-expanded"));
 
-    detailsButton.attr("aria-expanded", !expanded);
     details.toggleClass("hidden");
+    detailsButton.attr("aria-expanded", !expanded);
 
     if(expanded) detailsButton.html(window.translations["open-details"]);
     if(!expanded) detailsButton.html(window.translations["close-details"]);
 });
 /* End details button part. */
+
+/* Error code part. */
+errorCode.on("click", () =>{
+     const expanded = JSON.parse(errorCode.attr("aria-expanded"));
+
+     errorDebuggingInfo.toggleClass("hidden");
+     errorCode.attr("aria-expanded", !expanded);
+});
+/* End error code part. */
