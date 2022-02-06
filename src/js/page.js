@@ -5,10 +5,12 @@
 */
 
 "use strict";
-/* Elements part. */
+/* Initialize elements part. */
 const detailsButton = $("#details-button"),
     details = $("#details");
-/* End elements part. */
+
+detailsButton.html(window.translations["open-details"]);
+/* End initialize elements part. */
 
 /* Details button part. */
 detailsButton.on("click", () =>{
