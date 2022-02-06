@@ -9,7 +9,8 @@
 const detailsButton = $("#details-button"),
     details = $("#details"),
     errorCode = $("#error-code"),
-    errorDebuggingInfo = $("#error-debugging-info");
+    errorDebuggingInfo = $("#error-debugging-info"),
+    proceedLink = $("#proceed-link");
 
 detailsButton.html(window.translations["open-details"]);
 /* End initialize elements part. */
@@ -34,3 +35,7 @@ errorCode.on("click", () =>{
      errorCode.attr("aria-expanded", !expanded);
 });
 /* End error code part. */
+
+/* Proceed link code part. */
+proceedLink.attr("href", window.location.referrer);
+/* End proceed link code part. */
