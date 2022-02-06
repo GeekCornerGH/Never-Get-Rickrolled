@@ -37,5 +37,5 @@ errorCode.on("click", () =>{
 /* End error code part. */
 
 /* Proceed link code part. */
-proceedLink.attr("href", window.location.referrer);
+proceedLink.attr("href", `${window.location.search.replace("?fullURL=", "")}#rickroll-allowed`);
 /* End proceed link code part. */
