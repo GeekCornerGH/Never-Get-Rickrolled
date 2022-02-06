@@ -10,7 +10,8 @@ const detailsButton = $("#details-button"),
     details = $("#details"),
     errorCode = $("#error-code"),
     errorDebuggingInfo = $("#error-debugging-info"),
-    proceedLink = $("#proceed-link");
+    proceedLink = $("#proceed-link"),
+    backToSafety = $("#back-to-safety");
 
 detailsButton.html(window.translations["open-details"]);
 /* End initialize elements part. */
@@ -36,6 +37,7 @@ errorCode.on("click", () =>{
 });
 /* End error code part. */
 
-/* Proceed link code part. */
+/* Links code part. */
 proceedLink.attr("href", `${window.location.search.replace("?fullURL=", "")}#rickroll-allowed`);
-/* End proceed link code part. */
+backToSafety.on("click", () => history.back());
+/* End links code part. */
